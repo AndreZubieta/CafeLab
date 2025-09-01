@@ -4,65 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Café Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f3f0;
+      background-color: #fff9f5;
       color: #333;
+      line-height: 1.6;
     }
     header {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
+      background-color: #fff2e5;
     }
     header img {
       width: 100px;
       margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin: 0;
+      color: #d65a31;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     .value-prop {
       text-align: center;
-      max-width: 600px;
-      margin: 2rem auto;
       font-size: 1.2rem;
-      line-height: 1.6;
     }
     .mockup {
       display: flex;
       justify-content: center;
-      margin: 2rem 0;
+      margin-top: 2rem;
     }
     .mockup-placeholder {
       width: 90%;
-      height: 300px;
-      background-color: #ddd;
+      height: 250px;
+      background-color: #eee;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #666;
+      color: #777;
       font-size: 1rem;
       font-style: italic;
     }
-    .testimonials {
-      background-color: #fff;
-      padding: 2rem 1rem;
-    }
-    .testimonials h2 {
+    h2 {
+      color: #d65a31;
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-top: 3rem;
     }
-    .testimonial {
-      max-width: 600px;
-      margin: 1rem auto;
-      font-style: italic;
-      border-left: 4px solid #c99b66;
-      padding-left: 1rem;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "🟠 ";
+    }
+    .rewards, .ranking {
+      background-color: #fff2e5;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta button {
+      background-color: #ff6b35;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta button:hover {
+      background-color: #e45a27;
+    }
+    .contact {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 1rem;
+    }
+    .contact a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background-color: #25d366;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 2rem 0;
     }
   </style>
 </head>
@@ -73,27 +118,70 @@
     <h1>Café Lab</h1>
   </header>
 
-  <section class="value-prop">
+  <section class="section value-prop">
     <p>
       Cafetería con tablero de retos para mentes creativas.  
-      Resuelve desafíos de diseño, programación y más, mientras tomas tu café favorito.  
-      ¡Conecta, aprende, crea y gana recompensas!
+      Resuelve desafíos de diseño, programación y más mientras tomás café.  
+      ¡Conectá, aprendé, creá y ganá recompensas!
     </p>
-  </section>
-
-  <section class="mockup">
     <div class="mockup">
-      <img src="mockup.jpg" alt="Imagen ilustrativa de Café Lab" style="max-width:90%; border-radius:10px;">
+      <div class="mockup-placeholder">Aquí irá una imagen ilustrativa o mockup 🖼️</div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2>Lo que dicen quienes ya lo probaron ☕️💬</h2>
-    <div class="testimonial">“¡Esto es justo lo que necesitaba para empezar mi portafolio! Además, conocí a mi actual socio aquí 😄”</div>
-    <div class="testimonial">“Nunca pensé que programar y tomar café serían tan buena combinación. ¡Y encima me gané una bebida gratis!”</div>
-    <div class="testimonial">“Ambiente relajado, retos divertidos y mucha inspiración. Café Lab me sacó del bloqueo creativo.”</div>
+  <section class="section">
+    <h2>🧩 Algunos de los retos que podrías resolver:</h2>
+    <ul>
+      <li>Diseñá un logo para una empresa de pañales ecológicos</li>
+      <li>Maquetá una web para un restaurante con menú interactivo</li>
+      <li>Creá un post en Canva para una marca de café</li>
+      <li>Escribí un copy para una app de bienestar mental</li>
+      <li>Prototipá una app para encontrar ferias locales</li>
+    </ul>
   </section>
+
+  <section class="section rewards">
+    <h2>🎁 ¡Participá y ganá premios reales!</h2>
+    <p>
+      Completá retos, subí tus soluciones y acumulá puntos para ganar premios como estos:
+    </p>
+    <ul>
+      <li>🥇 Premios en efectivo: Bs. 300 al mejor reto</li>
+      <li>☕ Café gratis por participar o ganar mini retos semanales</li>
+      <li>🎓 Certificados por completar 3+ retos</li>
+      <li>🎟️ Cupones de descuento en snacks o café</li>
+      <li>🌟 Stickers tech o pines exclusivos</li>
+    </ul>
+  </section>
+
+  <section class="section ranking">
+    <h2>📈 ¡Construí tu lugar en el muro del talento!</h2>
+    <p>
+      En la cafetería tendremos un tablero físico con los participantes más activos y con mejores retos.
+      También podés aparecer en el ranking digital. ¡Sumá puntos y subí de nivel!
+    </p>
+    <div class="mockup">
+      <div class="mockup-placeholder">Aquí podrías mostrar un leaderboard estilo videojuego 🎮</div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>🔔 Quiero que me avisen cuando empiece</h2>
+    <button onclick="window.open('https://TU_LINK_DE_GOOGLE_FORM', '_blank')">
+      ¡Sí, quiero participar!
+    </button>
+  </section>
+
+  <section class="contact">
+    <p>¿Tienes alguna duda? ¡No dudes en escribirnos!</p>
+    <a href="https://wa.me/591XXXXXXXXX?text=Hola%20Café%20Lab!%20Tengo%20una%20duda%20:)" target="_blank">
+      💬 Escribinos por WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    Proyecto piloto – Café Lab 2025 ©
+  </footer>
 
 </body>
 </html>
-
